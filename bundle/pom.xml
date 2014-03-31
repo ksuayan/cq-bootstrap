@@ -60,6 +60,10 @@
             <groupId>org.apache.sling</groupId>
             <artifactId>org.apache.sling.jcr.api</artifactId>
         </dependency>
+        <dependency>
+      		<groupId>org.apache.sling</groupId>
+      		<artifactId>org.apache.sling.commons.json</artifactId>
+    	</dependency>
     </dependencies>
 
     <!-- ====================================================================== -->
@@ -86,6 +90,7 @@
                 <configuration>
                     <instructions>
                         <Bundle-SymbolicName>com.globalbin.cq-bootstrap-bundle</Bundle-SymbolicName>
+                        <Export-Package>com.globalbin.web.servlets.*</Export-Package>
                     </instructions>
                 </configuration>
             </plugin>
